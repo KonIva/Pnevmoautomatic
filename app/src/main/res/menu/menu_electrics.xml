@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ivan.electric.ElectricsActivity">
+    <item
+        android:id="@+id/back"
+        android:orderInCategory="100"
+        android:title="В начало"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/escape"
+        android:orderInCategory="100"
+        android:title="Выход"
+        app:showAsAction="never" />
+</menu>
