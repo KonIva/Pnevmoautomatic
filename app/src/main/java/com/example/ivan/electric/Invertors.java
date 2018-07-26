@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Invertors extends Fragment implements View.OnClickListener{
 
@@ -42,14 +43,29 @@ public class Invertors extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-
-        String firstM=editText3.getText().toString();
-        String secondM=editText4.getText().toString();
-        float end1=Float.parseFloat(firstM)+Float.parseFloat(secondM);
-        String end=String.valueOf(end1);
-        float ampers=end1/400;
-        String ampers1=String.valueOf(ampers);
-        textView19.setText(end1+" Вт\n"+ampers1+" Ампер");
+         try{
+         operation();
+         }catch (NumberFormatException e){
+         textView19.setText("Введите число");
+         }
         }
+
+
+
+     public void operation(){
+         String firstM=editText3.getText().toString();
+         String secondM=editText4.getText().toString();
+         float firstM1=0;
+         float secondM1=0;
+         float firstM2 = 0;
+         float secondM2=0;
+         if(firstM.length()>0||secondM.length()>0){
+         firstM2=Float.parseFloat(firstM);
+         secondM2=Float.parseFloat(secondM);}
+         String end=String.valueOf(firstM1+firstM2+secondM2+secondM1);
+         float ampers=(firstM1+firstM2+secondM1+secondM2)/400;
+         String ampers1=String.valueOf(ampers);
+         textView19.setText(end+" Вт\n"+ampers1+" Ампер");
+     }
     }
 
