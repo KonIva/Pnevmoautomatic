@@ -14,7 +14,7 @@ public class PLK extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View viewRoot= inflater.inflate(R.layout.plk, container, false);
         WebView webrelay=(WebView)viewRoot.findViewById(R.id.webrelay);
-        webrelay.loadUrl("file:///android_gifrelay/relay.html");
+        webrelay.loadUrl("file:///android_asset/relay.html");
         return viewRoot;
     }
 }
