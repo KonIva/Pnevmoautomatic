@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Инверторы"
+                android:textColor="#0277BD"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Частотный асинхронный преобразователь частоты(Инвертор) служит для преобразования сетевого трёхфазного или однофазного переменного тока частотой 50 (60) Гц в трёхфазный или однофазный ток, частотой от 1 Гц до 800 Гц.  Промышленностью выпускаются частотные преобразователи электроиндукционного типа, представляющего собой по конструкции асинхронный двигатель с фазным ротором, работающий в режиме генератора-преобразователя, и преобразователи электронного типа.  Частотные преобразователи электронного типа часто применяют для плавного регулирования скорости асинхронного электродвигателя или синхронного двигателя за счет создания на выходе преобразователя электрического напряжения заданной частоты. В простейших случаях регулирование частоты и напряжения происходит в соответствии с заданной характеристикой V/f, в наиболее совершенных преобразователях реализовано так называемое векторное управление.  Частотный преобразователь электронного типа — это устройство, состоящее из выпрямителя (моста постоянного тока), преобразующего переменный ток промышленной частоты в постоянный, и инвертора (преобразователя) (иногда с ШИМ), преобразующего постоянный ток в переменный требуемой частоты и амплитуды. Выходные тиристоры (GTO) или транзисторы (IGBT) обеспечивают необходимый ток для питания электродвигателя.  Для улучшения формы выходного напряжения между преобразователем и двигателем иногда ставят дроссель, а для уменьшения электромагнитных помех — EMC-фильтр."
+                android:textColor="#00695C" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Предположим что у нас есть 1 преобразователь частоты и 2 двигателя, которые нужно к нему подключить. По 2-ому закону Кирхгофа алгебраическая сумма напряжений на резистивных элементах замкнутого контура равна алгебраической сумме ЭДС, входящих в этот контур. То есть для того чтобы подключить двигатели мы должны расчитать номинальную мощность преобразователя частоты и параллельно подключить фазы 2-х двигателей"
+                android:textColor="#00695C"
+                />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Введите значения мощности двух двигателей(для 3х400В)"
+                android:textColor="#0277BD"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ватт" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ватт" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Расчитать"
+                android:onClick="Check"
+                />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

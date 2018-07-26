@@ -26,7 +26,7 @@
             android:label="Пневматика"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MehanicActivity"
+            android:name=".ShopsActivity"
             android:label="Механика"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

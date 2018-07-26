@@ -147,8 +147,11 @@ public class ElectricsActivity extends AppCompatActivity {
                     Motors motors=new Motors();
                     return motors;
                 case 1:
-                    Motors motors1=new Motors();
-                    return motors1;
+                   Invertors invert=new Invertors();
+                   return invert;
+                case 2:
+                    PLK plk=new PLK();
+                    return plk;
             }
             return null;
         }
