@@ -78,7 +78,7 @@ public class ElectricsActivity extends AppCompatActivity {
         int id = item.getItemId();
 
 
-        //noinspection SimplifiableIfStatement
+
         switch(id){
             case R.id.back:
                 Intent intent=new Intent(this, MainActivity.class);

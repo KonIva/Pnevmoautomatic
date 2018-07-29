@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void mehanicBtn(View view) {
+    public void shopsBtn(View view) {
         Intent intent=new Intent(this, ShopsActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);

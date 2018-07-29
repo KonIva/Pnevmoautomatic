@@ -30,11 +30,11 @@
             android:text="Пневматика" />
 
         <Button
-            android:id="@+id/mehanicbtn"
+            android:id="@+id/shopsbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:onClick="mehanicBtn"
-            android:text="Механика" />
+            android:onClick="shopsBtn"
+            android:text="Электромагазины" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

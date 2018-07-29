@@ -1,5 +1,6 @@
 package com.example.ivan.electric;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -75,7 +76,15 @@ public class PneumaticActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+        switch(id){
+            case R.id.back1:
+                Intent intent=new Intent(this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                break;
+            case R.id.escape1:
+                finish();
+        }
 
 
         return super.onOptionsItemSelected(item);
@@ -135,8 +144,8 @@ public class PneumaticActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 2 total pages.
+            return 2;
         }
     }
 }
