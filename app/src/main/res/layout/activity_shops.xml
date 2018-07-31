@@ -1,63 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".ShopsActivity">
+    tools:context=".ShopsActivity"
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
+    >
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/appbar_padding_top"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_weight="1"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="Механика">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        </android.support.v7.widget.Toolbar>
-
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <android.support.design.widget.TabItem
-                android:id="@+id/tabItem"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tab_text_1" />
+                android:text="Минимакс"
+                android:textSize="30dp" />
 
-            <android.support.design.widget.TabItem
-                android:id="@+id/tabItem2"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tab_text_2" />
+                android:text="Большой магазин с огромным ассортиментом электротоваров. От бюджетных розеток до высоковольтного оборудования." />
 
-            <android.support.design.widget.TabItem
-                android:id="@+id/tabItem3"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/saitMnks"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tab_text_3" />
+                android:layout_weight="1"
+                android:onClick="saitMnks"
+                android:text="САЙТ" />
 
-        </android.support.design.widget.TabLayout>
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ЭТМ"
+                android:textSize="30dp" />
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Компания ЭТМ – это профессиональный дистрибьютор электротехники на всей территории России для широкого круга клиентов: промышленных предприятий, производителей электрощитового оборудования, предприятий инфраструктуры, электромонтажных и строительных компаний, частных монтажников, розничных магазинов и сетей DIY, проектировщиков и частных лиц. " />
 
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="saitETM"
+                android:text="САЙТ" />
 
-</android.support.design.widget.CoordinatorLayout>
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

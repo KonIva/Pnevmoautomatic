@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ivan.electric">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,10 +25,9 @@
             android:name=".PneumaticActivity"
             android:label="Пневматика"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ShopsActivity"
-            android:label="Механика"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ShopsActivity"
+            android:label="Электромагазины"
+            ></activity>
     </application>
 
 </manifest>

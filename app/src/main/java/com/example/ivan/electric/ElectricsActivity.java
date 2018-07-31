@@ -86,7 +86,13 @@ public class ElectricsActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.escape:
-                finish();
+                moveTaskToBack(true);
+
+                super.onDestroy();
+
+                System.runFinalizersOnExit(true);
+                System.exit(0);
+                break;
         }
 
         return super.onOptionsItemSelected(item);

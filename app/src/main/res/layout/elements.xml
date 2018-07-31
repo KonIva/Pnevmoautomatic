@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Распределители"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пневмораспределитель – это устройство, которое позволяет управлять энергией сжатого воздуха, которая поступает от определенного источника к потребителю. Оборудование должно быть качественным, так как только в таком случае оно будет эффективно выполнять свои основные функции.Пневматический распределитель работает в специальной системе. На него воздействует внешний управляющий источник, который позволяет изменять направление потоков сжатого воздуха.
+Вы можете сделать выбор в пользу пневмораспределителя как с ручным, так и с комбинированным вариантом управления. Это зависит от ваших конкретных потребностей и тех заданий, которые необходимо решить.
+Комбинированное управление сейчас пользуется огромной популярностью. В данный вид входит электромеханическое и электропневматическое управление.
+К магистральному трубопроводу пневматический распределитель может подключаться несколькими способами. Наиболее известные и распространенные – это двухканальные, трехканальные и четырехканальные методы." />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Цилиндры"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Конструкция пневмоцилиндра, в отличие от поворотных исполнительных устройств, значительно проще и состоит из полой гильзы, внутри которой под давлением сжатого воздуха передвигается шток, создающий втягивающее и толкающее воздействие на механизм.
+Пневматический цилиндр в зависимости от принципа работы может быть нескольких видов:
+1.Цилиндр одностороннего действия.
+2.Цилиндр двустороннего действия.
+Конструкция одностороннего цилиндра подразумевает наличие только одного впускного отверстия, соответственно, рабочий ход механизм совершает только в одном направлении, в отличие от двустороннего цилиндра. Впускные отверстия в двустороннем цилиндре располагаются с обеих сторон, благодаря чему рабочий ход совершается в двух направлениях.
+" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Пуск" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Стоп" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imagePnev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

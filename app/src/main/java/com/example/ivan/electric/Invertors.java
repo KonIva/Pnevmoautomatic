@@ -47,6 +47,7 @@ public class Invertors extends Fragment implements View.OnClickListener{
          operation();
          }catch (NumberFormatException e){
          textView19.setText("Введите число");
+
          }
         }
 
@@ -55,14 +56,19 @@ public class Invertors extends Fragment implements View.OnClickListener{
      public void operation(){
          String firstM=editText3.getText().toString();
          String secondM=editText4.getText().toString();
+
          float firstM2 = 0;
          float secondM2=0;
+
          if(firstM.length()>0||secondM.length()>0){
-         firstM2=Float.parseFloat(firstM);
-         secondM2=Float.parseFloat(secondM);}
+           firstM2=Float.parseFloat(firstM);
+           secondM2=Float.parseFloat(secondM);}
+
          String end=String.valueOf(firstM2+secondM2);
+
          float ampers=(firstM2+secondM2)/400;
          String ampers1=String.valueOf(ampers);
+
          textView19.setText(end+" Вт\n"+ampers1+" Ампер");
      }
     }

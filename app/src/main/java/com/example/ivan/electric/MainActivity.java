@@ -28,7 +28,12 @@ public class MainActivity extends AppCompatActivity {
         int id=item.getItemId();
         switch (id){
             case 1:
-                finish();
+                moveTaskToBack(true);
+
+                super.onDestroy();
+
+                System.runFinalizersOnExit(true);
+                System.exit(0);
         }
         return super.onOptionsItemSelected(item);
     }

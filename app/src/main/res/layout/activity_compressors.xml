@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Компрессоры"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Под компрессорными установками понимается широкий спектр агрегатов, нагнетающих сжатый воздух. В некотором смысле это генераторы воздушных потоков, которые используются как усилие для выполнения определенных рабочих действий. К примеру, сжатый воздух является рабочей средой для пневматических строительных инструментов. Станция направляет его к оборудованию, в результате чего выполняется конечная функция. В техническом отношении компрессор – это сложная машина, построенная на механической рабочей группе. В процессе работы оператор должен учитывать параметры состояния установки, в некоторых случаях регулируя давление подачи воздуха. Также существуют модели, которые в постоянном режиме работают без участия пользователя – ими управляет автоматика. Обычно это производственные компрессоры, которые входят в конвейерные линии обработки разных материалов." />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/startBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Пуск" />
+
+                <Button
+                    android:id="@+id/stopBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Стоп" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

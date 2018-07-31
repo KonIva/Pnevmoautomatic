@@ -83,7 +83,13 @@ public class PneumaticActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.escape1:
-                finish();
+                moveTaskToBack(true);
+
+                super.onDestroy();
+
+                System.runFinalizersOnExit(true);
+                System.exit(0);
+                break;
         }
 
 
@@ -139,7 +145,17 @@ public class PneumaticActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            switch (position){
+                case 0:
+                    Compressors compressors=new Compressors();
+                    return compressors;
+                case 1:
+                    Elements elements=new Elements();
+                    return  elements;
+
+
+            }
+            return null;
         }
 
         @Override
